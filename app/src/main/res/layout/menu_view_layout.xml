@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="#33000000"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent">
+<!--外层必须是RelativeLayout，才能正常显示-->
+    <!--android:clickable="true",设置不响应点击事件-->
+    <LinearLayout
+        android:id="@+id/menu_ll"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#1b998e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/a"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <TextView
+                android:text="Google 加速球"
+                android:textSize="20sp"
+                android:textColor="#2e43ac"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <com.example.kirito.animation360_1.view.ProgressView
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
